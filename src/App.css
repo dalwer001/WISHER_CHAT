@@ -1,0 +1,100 @@
+html {
+  scroll-behavior: smooth;
+}
+
+.main {
+  min-height: 100vh;
+  /* background-color: rgb(20, 37, 39); */
+}
+
+.main:before {
+  content: '';
+  z-index: -1;
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  -webkit-filter: blur(10px);
+  background: url(./images/bg-3.png) no-repeat;
+  background-size: cover;
+}
+
+body::-webkit-scrollbar {
+  width: 0.8em;
+  background-color: #F5F5F5;
+}
+
+/* create a custom scrollbar */
+body::-webkit-scrollbar-thumb {
+  border-radius: 10px;
+  background-color: #918e8e;
+}
+
+.header__wisher {
+  letter-spacing: 4px;
+}
+
+.scrollable {
+  border-radius: 10px;
+  color: #F5F5F5;
+  overflow-y: auto;
+  height: 450px;
+}
+
+.scrollable::-webkit-scrollbar {
+  width: 0.5em;
+  background-color: #a09f9f;
+}
+
+/* create a custom scrollbar */
+.scrollable::-webkit-scrollbar-thumb {
+  background-color: #9489cb;
+}
+
+.desc__details::-webkit-scrollbar {
+  border-radius: 10px;
+  width: 0.5em;
+  background-color: #9c9090;
+}
+
+/* create a custom scrollbar */
+.desc__details::-webkit-scrollbar-thumb {
+  background-color: #ffffff;
+}
+
+/* Button Neon Style */
+
+.genBtn__style {
+  color: rgb(17, 74, 43) !important;
+  border: 1px solid rgb(17, 74, 43) !important;
+  padding: 20px;
+  font-size: 30px;
+  transition: 0.5s all ease-in;
+  background-color: transparent;
+  border-radius: 3em;
+  cursor: pointer;
+  letter-spacing: 4px;
+}
+
+.genBtn__style:hover {
+  color: #fff !important;
+  background: #197739 !important;
+  box-shadow: 0 0 10px #197739, 0 0 30px #197739, 0 0 60px #197739;
+}
+
+.refBtn__style {
+  color: rgb(226, 71, 36) !important;
+  border: 1px solid rgb(226, 71, 36) !important;
+  letter-spacing: 4px;
+  text-decoration: none;
+  font-size: 24px;
+  overflow: hidden;
+  transition: 0.5s all ease-in;
+}
+
+.refBtn__style:hover {
+  color: #fff !important;
+  background: rgb(196, 46, 13) !important;
+  box-shadow: 0 0 10px rgb(196, 46, 13), 0 0 30px rgb(196, 46, 13), 0 0 60px rgb(196, 46, 13);
+}

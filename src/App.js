@@ -20,7 +20,7 @@ function App() {
         model: "text-davinci-003",
         prompt: prompt,
         temperature: 0.5,
-        max_tokens: 3000,
+        max_tokens: 1500,
       });
       setResult(response.data.choices[0].text);
     } catch (error) {

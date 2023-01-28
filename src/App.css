@@ -20,6 +20,23 @@ html {
   background-size: cover;
 }
 
+.jp_main {
+  min-height: 100vh;
+}
+
+.jp_main::before {
+  content: '';
+  z-index: -1;
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  -webkit-filter: blur(10px);
+  background: url(./images/bg-4.png) no-repeat;
+  background-size: cover;
+}
+
 body::-webkit-scrollbar {
   width: 0.8em;
   background-color: #F5F5F5;
@@ -68,8 +85,6 @@ body::-webkit-scrollbar-thumb {
 .genBtn__style {
   color: rgb(17, 74, 43) !important;
   border: 1px solid rgb(17, 74, 43) !important;
-  padding: 20px;
-  font-size: 30px;
   transition: 0.5s all ease-in;
   background-color: transparent;
   border-radius: 3em;
@@ -88,7 +103,6 @@ body::-webkit-scrollbar-thumb {
   border: 1px solid rgb(226, 71, 36) !important;
   letter-spacing: 4px;
   text-decoration: none;
-  font-size: 24px;
   overflow: hidden;
   transition: 0.5s all ease-in;
 }
